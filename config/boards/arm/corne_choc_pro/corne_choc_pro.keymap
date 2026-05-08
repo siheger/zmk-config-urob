@@ -109,7 +109,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp A>, <&none &kp DQT>;
+        bindings = <&kp A>, <&kp DQT>;
     };
 
     td_k: td_k {
