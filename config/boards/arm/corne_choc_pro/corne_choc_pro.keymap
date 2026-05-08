@@ -100,10 +100,8 @@ behaviors {
         tapping-term-ms = <200>;
         bindings = <&kp LSHFT>, <&kp CAPS>;
     };
-};
 
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -122,9 +120,9 @@ behaviors {
 bindings = <
     &none      &td_q   &td_w   &td_e   &td_r   &td_t   &kp F3     &kp UP     &td_y   &td_u   &td_i   &td_o   &td_p   &kp BSPC
 
-    &hm_esc_ctrl LCTRL ESC   &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5   &kp DOWN   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen   &kp HASH
+    &kp ESC  &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5   &kp DOWN   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen   &kp HASH
 
-    &hm_ctrl_shift LCTRL LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B           &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_shift
+    &kp LCTRL   &kp Z   &kp X   &kp C   &kp V   &kp B           &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_shift
 
                             &kp LGUI   &kp LALT   &kp SPACE        &kp RET   &td_shift   &kp RALT
 >;
