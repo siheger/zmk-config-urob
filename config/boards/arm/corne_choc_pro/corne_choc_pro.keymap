@@ -20,14 +20,17 @@
             bindings = <&kp Q>, <&kp EXCL>;
         };
 
-        hm_q_1: hold_mod_q_1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_MOD_Q_1";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+        
+hm_q_1: hold_mod_q_1 {
+  compatible = "zmk,behavior-hold-tap";
+  label = "HOLD_TD_Q_1";
+  #binding-cells = <0>;
+  tapping-term-ms = <200>;
+  quick-tap-ms = <125>;
+  flavor = "tap-preferred";
+  bindings = <&kp N1>, <&td_q>;
+};
+
         };
 
         // W: Tap Dance - W / Doppeltap: " / Hold: 2
