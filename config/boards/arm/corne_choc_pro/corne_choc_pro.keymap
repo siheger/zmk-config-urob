@@ -10,10 +10,10 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        // Q: Tap Dance - Q / Doppeltap: ! / Hold: 1
-        
-ht_kp: ht_kp {
+    
+behaviors {
+    // Generic hold-tap for two keypresses: HOLD param, TAP param
+    ht_kp: ht_kp {
       compatible = "zmk,behavior-hold-tap";
       label = "HT_KP";
       #binding-cells = <2>;
@@ -21,21 +21,17 @@ ht_kp: ht_kp {
       quick-tap-ms = <0>;
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
+    };
 
-        };
-
-        
-
-td_q: td_q {
+    // Q: 1x = (hold-tap: tap Q, hold 1), 2x = !
+    td_q: td_q {
       compatible = "zmk,behavior-tap-dance";
       label = "TD_Q";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
       bindings = <&ht_kp N1 Q>, <&kp EXCL>;
+    };
 
-};
-
-        };
 
         // W: Tap Dance - W / Doppeltap: " / Hold: 2
         td_w: tap_dance_w {
