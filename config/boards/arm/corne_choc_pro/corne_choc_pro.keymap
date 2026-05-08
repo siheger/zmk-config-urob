@@ -118,12 +118,17 @@ behaviors {
             // └──────┴──────┴──────┴──────┼──────┼──────┼──────┬──────┼──────┼──────┴──────┴──────┴──────┴──────┘
             //                             │ GUI  │ ALT* │SPC   │ ENT  │ SFT* │ ALT  │
             //                             └──────┴──────┴──────┴──────┴──────┴──────┘
-            bindings = <
-                &none                                    &td_q   &hm_w_2 LCTRL N2    &hm_e_3 LCTRL N3    &hm_r_4 LCTRL N4    &hm_t_5 LCTRL N5    &kp F3                 &kp UP            &hm_y_6 LCTRL N6    &hm_u_7 LCTRL N7    &hm_i_8 LCTRL N8    &hm_o_9 LCTRL N9    &hm_p_0 LCTRL N0    &kp BSPC
-                &hm_esc_ctrl LCTRL ESC                  &td_a                                     &kp S               &kp D               &kp F               &kp G               &kp F5                 &kp DOWN          &kp H               &kp J               &td_k                              &kp L               &hm_paren_lbrc LCTRL LBRC  &hm_rparen_rbrc LCTRL RBRC  &kp HASH
-                &hm_ctrl_shift LCTRL LSHFT              &kp Z                                     &kp X               &kp C               &kp V               &kp B                                                                    &kp N               &kp M               &td_comma           &hm_dot_under LCTRL UNDER  &hm_slash_hash LCTRL HASH   &td_shift
-                                                                                                                                           &kp LGUI             &kp LALT             &kp SPACE                         &kp RET              &td_shift             &kp RALT
-            >;
+           
+bindings = <
+    &none      &td_q   &td_w   &td_e   &td_r   &td_t   &kp F3     &kp UP     &td_y   &td_u   &td_i   &td_o   &td_p   &kp BSPC
+
+    &hm_esc_ctrl LCTRL ESC   &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5   &kp DOWN   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen   &kp HASH
+
+    &hm_ctrl_shift LCTRL LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B           &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_shift
+
+                            &kp LGUI   &kp LALT   &kp SPACE        &kp RET   &td_shift   &kp RALT
+>;
+
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
