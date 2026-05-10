@@ -166,7 +166,6 @@ td_p: td_p {
         bindings = <&kp LSHFT>, <&kp CAPS>;
     };
 
-    };
 
     keymap {
         compatible = "zmk,keymap";
