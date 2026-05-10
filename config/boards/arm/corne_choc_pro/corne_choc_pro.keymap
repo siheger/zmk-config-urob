@@ -112,12 +112,12 @@ td_p: td_p {
         bindings = <&kp A>, <&kp SQT>;
     };
 
-    
     td_k: td_k {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp K>, <&kp LS(LBKT)>;
+        bindings = <&kp K>, <&kp KP_MULTIPLY>;
+
     };
 
     td_comma: td_comma {
@@ -148,7 +148,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp RA(N7) LS(N8)>, <&kp RA(N8)>;
+        bindings = <&ht_kp RA(N8) LS(N8)>, <&kp RA(N5)>;
 
     };
 
@@ -156,7 +156,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp RA(N0) LS(N9)>, <&kp RA(N9)>;
+        bindings = <&ht_kp RA(N9) LS(N9)>, <&kp RA(N6)>;
 
     };
 
