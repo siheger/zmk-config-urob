@@ -98,7 +98,7 @@ td_p: td_p {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
     tapping-term-ms = <200>;
-    bindings = <&ht_kp N0 P>, <&kp QMARK>;
+    bindings = <&ht_kp N0 P>, <&kp LS(MINUS)>;
 };
 
     // ─────────────────────────────
@@ -112,18 +112,19 @@ td_p: td_p {
         bindings = <&kp A>, <&kp SQT>;
     };
 
+    
     td_k: td_k {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp K>, <&kp ASTRK>;
+        bindings = <&kp K>, <&kp LS(LBKT)>;
     };
 
     td_comma: td_comma {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp COMMA>;
+        bindings = <&kp COMMA>, <&kp LS(N0)>;
 
     };
 
@@ -131,7 +132,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp UNDER DOT>, <&kp COLON>;
+        bindings = <&ht_kp LS(FSLH) DOT>, <&kp LS(DOT)>;
 
     };
 
@@ -139,7 +140,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp NON_US_HASH MINUS>, <&kp PLUS>;
+        bindings = <&ht_kp NON_US_HASH FSLH>, <&kp RBKT>;
 
     };
 
@@ -147,15 +148,15 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp LS(N7) LPAR>, <&kp LBKT>;
+        bindings = <&ht_kp RA(N7) LS(N8)>, <&kp RA(N8)>;
+
     };
 
-    
     td_rparen: td_rparen {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&ht_kp LS(N0) RPAR>, <&kp RBKT>;
+        bindings = <&ht_kp RA(N0) LS(N9)>, <&kp RA(N9)>;
 
     };
 
