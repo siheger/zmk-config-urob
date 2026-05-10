@@ -165,7 +165,7 @@ td_p: td_p {
         tapping-term-ms = <200>;
         bindings = <&kp LSHFT>, <&kp CAPS>;
     };
-
+    };
 
     keymap {
         compatible = "zmk,keymap";
