@@ -123,7 +123,7 @@ td_p: td_p {
         compatible = "zmk,behavior-tap-dance";
         #binding-cells = <0>;
         tapping-term-ms = <200>;
-        bindings = <&kp COMMA
+        bindings = <&kp COMMA>;
 
     };
 
