@@ -178,26 +178,23 @@ td_p: td_p {
             <&rgb_ug RGB_EFF>;     // 3x Tap → Effekt wechseln
     };
 
+
+    mm_up_left: mm_up_left {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp UP>, <&kp LEFT>;
+        mods = <(MOD_LGUI)>;
     };
 
-
-combos {
-    compatible = "zmk,combos";
-
-    combo_gui_up {
-        timeout-ms = <75>;
-        key-positions = <43 8>;
-        bindings = <&kp LEFT>;
-        slow-release;
+    mm_down_right: mm_down_right {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DOWN>, <&kp RIGHT>;
+        mods = <(MOD_LGUI)>;
     };
 
-    combo_gui_down {
-        timeout-ms = <75>;
-        key-positions = <43 22>;
-        bindings = <&kp RIGHT>;
-        slow-release;
     };
-};
+
 
 
     keymap {
@@ -217,9 +214,9 @@ combos {
            
 
 bindings = <
-    &kp ESC     &td_q   &td_w   &td_e   &td_r   &td_t   &kp F3     &kp UP     &td_y   &td_u   &td_i   &td_o   &td_p   &kp BSPC
+    &kp ESC     &td_q   &td_w   &td_e   &td_r   &td_t   &kp F3     &mm_up_left     &td_y   &td_u   &td_i   &td_o   &td_p   &kp BSPC
 
-    &kp TAB     &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5     &kp DOWN   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen
+    &kp TAB     &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5     &mm_down_right   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen
 
     &td_shift   &kp Z   &kp X   &kp C   &kp V   &kp B              &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_lctrl
 
