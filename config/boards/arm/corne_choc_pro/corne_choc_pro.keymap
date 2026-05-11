@@ -188,12 +188,14 @@ combos {
         timeout-ms = <75>;
         key-positions = <43 8>;
         bindings = <&kp LEFT>;
+        slow-release;
     };
 
     combo_gui_down {
         timeout-ms = <75>;
         key-positions = <43 22>;
         bindings = <&kp RIGHT>;
+        slow-release;
     };
 };
 
