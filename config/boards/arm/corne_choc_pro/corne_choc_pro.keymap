@@ -180,6 +180,24 @@ td_p: td_p {
 
     };
 
+
+combos {
+    compatible = "zmk,combos";
+
+    combo_gui_up {
+        timeout-ms = <50>;
+        key-positions = <43 7>;
+        bindings = <&kp LEFT>;
+    };
+
+    combo_gui_down {
+        timeout-ms = <50>;
+        key-positions = <43 21>;
+        bindings = <&kp RIGHT>;
+    };
+};
+
+
     keymap {
         compatible = "zmk,keymap";
 
