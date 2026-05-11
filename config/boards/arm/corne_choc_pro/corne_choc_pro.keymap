@@ -189,7 +189,7 @@ bindings = <
 
     &kp TAB     &td_a   &kp S   &kp D   &kp F   &kp G   &kp F5     &kp DOWN   &kp H   &kp J   &td_k   &kp L   &td_paren   &td_rparen
 
-    &kp LCTRL   &kp Z   &kp X   &kp C   &kp V   &kp B              &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_shift
+    &td_shift   &kp Z   &kp X   &kp C   &kp V   &kp B              &kp N   &kp M   &td_comma   &td_dot   &td_slash   &kp LCTRL
 
                           &kp LALT   &kp LGUI   &kp SPACE          &kp RET      &td_shift   &kp RALT
 >;
