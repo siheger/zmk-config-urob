@@ -191,7 +191,7 @@ bindings = <
 
     &kp LCTRL   &kp Z   &kp X   &kp C   &kp V   &kp B              &kp N   &kp M   &td_comma   &td_dot   &td_slash   &td_shift
 
-                          &kp LGUI   &kp LALT   &kp SPACE          &kp RET      &td_shift   &kp RALT
+                          &kp LALT   &kp LGUI   &kp SPACE          &kp RET      &td_shift   &kp RALT
 >;
 
 
